@@ -26,6 +26,7 @@
                     <h3 class="card-title text-center mb-4">Create a New Blog Post</h3>
                     <form action="" method="post">
                         {% csrf_token %}
+                        {{form.media}}
                         <div class="mb-4">
                             <!-- Render each field individually with Bootstrap classes -->
                             <div class="form-group mb-3">
