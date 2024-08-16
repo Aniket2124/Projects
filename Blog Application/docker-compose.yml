@@ -1,0 +1,11 @@
+version: "27.0.3"
+services:
+  app:
+   build: .
+   volumes:
+    - .:/blog_application
+   ports:
+    - "8000:8000"
+   image: application:django
+   container_name: app_container
+   command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
